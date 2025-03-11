@@ -1,9 +1,32 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import {
+  Navbar,
+  Hero,
+  About,
+  Experience,
+  Projects,
+  Contact,
+} from "./components/index.js";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <BrowserRouter>
+      <main>
+        <div>
+          <Navbar />
+          <Hero></Hero>
+        </div>
 
-export default App
+        <div>
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </div>
+      </main>
+    </BrowserRouter>
+  );
+};
+
+export default App;

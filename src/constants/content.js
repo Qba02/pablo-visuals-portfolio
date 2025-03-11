@@ -1,4 +1,4 @@
-export const aboutMe = {
+const aboutMe = {
   title: "O mnie",
   content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii. 
     Pierwsze filmy montowałem jako dziecko, kiedy kolega pokazał mi podstawowy program do edycji, a ja złożyłem swój pierwszy wakacyjny film. 
@@ -9,7 +9,7 @@ export const aboutMe = {
     Moje logo, rzymski hełm legionisty, symbolizuje pasję, determinację i filmowe korzenie, które kształtowały mnie od najmłodszych lat.`,
 };
 
-export const experience = {
+const experience = {
   title: "Doświadczenie i Pasja",
   content: `Przez lata byłem harcerzem, a dziś jestem instruktorem ZHR w stopniu podharcmistrza. 
   Prowadziłem drużynę oraz sekcję filmową, której film "Chata" zdobył pierwsze miejsce w ogólnopolskim harcerskim festiwalu filmowym. 
@@ -18,7 +18,7 @@ export const experience = {
   quote: `„Niektóre filmy są kawałkiem życia, moje są kawałkiem ciasta.” – Alfred Hitchcock.`,
 };
 
-export const offer = {
+const offer = {
   title: "Oferta",
   description: `Każdy projekt wyceniam indywidualnie, uwzględniając jego zakres i specyfikę. 
   Przed realizacją dokładnie omawiam wizję z klientem, klarownie przedstawiam wycenę oraz planuję każdy etap produkcji.`,
@@ -33,7 +33,7 @@ export const offer = {
   ],
 };
 
-export const projects = [
+const projects = [
   {
     title: "Nowoczesne Technologie – Filmy AI i Social Media",
     content: `Przecieram szlaki w dziedzinie filmowej sztucznej inteligencji (AI) – stworzyłem m.in. teledysk do utworu "SpaceX" 
@@ -49,3 +49,5 @@ export const projects = [
     Znam się na dostosowywaniu projektów dla osób z niepełnosprawnościami i dbam o to, by każdy film był dostępny i angażujący.`,
   },
 ];
+
+export {aboutMe, experience, offer, projects}
