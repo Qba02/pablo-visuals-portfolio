@@ -1,3 +1,8 @@
+const hero = {
+  title: "Paweł Kanik",
+  content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii.`,
+};
+
 const aboutMe = {
   title: "O mnie",
   content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii. 
@@ -50,4 +55,4 @@ const projects = [
   },
 ];
 
-export {aboutMe, experience, offer, projects}
+export { aboutMe, experience, offer, projects, hero };
