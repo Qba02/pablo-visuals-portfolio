@@ -12,7 +12,7 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <main>
+      <main className="relative z-0 bg-dark">
         <div>
           <Navbar />
           <Hero></Hero>
