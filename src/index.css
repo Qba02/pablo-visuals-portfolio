@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   margin: 0;
@@ -9,4 +9,23 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+@layer utilities {
+  .nav {
+    @apply relative text-xl font-medium hover:text-secondary transition-all duration-500;
+  }
+
+  .nav::after {
+    content: "";
+    @apply bg-secondary h-[2px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute transition-all duration-500;
+  }
+
+  .nav:hover::after {
+    @apply w-[100%];
+  }
+
+  .social-icon {
+    @apply w-10 h-10 hover:scale-110 hover:-rotate-6 transition-transform duration-300;
+  }
 }
