@@ -29,7 +29,38 @@
     @apply w-10 h-10 hover:scale-110 hover:-rotate-6 transition-transform duration-300;
   }
 
-  .section{
-    @apply relative w-full py-6 mx-auto px-28;
+  .section {
+    @apply relative w-full py-6 mx-auto px-28 mt-16;
+  }
+
+  .perspective-800 {
+    perspective: 800px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .transform-card {
+    transform: rotateY(calc(var(--offset) * 50deg))
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+  }
+
+  .blur-filter {
+    filter: blur(calc(var(--abs-offset) * 1rem));
+  }
+
+  .slider-button {
+    @apply text-6xl absolute top-1/2 z-10 hover:opacity-60 transition-all duration-500;
+  }
+  
+  .left {
+    transform: translateX(-100%) translateY(-50%);
+  }
+
+  .right {
+    @apply right-0;
+    transform: translateX(100%) translateY(-50%);
   }
 }

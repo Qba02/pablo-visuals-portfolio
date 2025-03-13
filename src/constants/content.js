@@ -1,3 +1,5 @@
+import { tmp } from "../assets/index";
+
 const hero = {
   title: "Paweł Kanik",
   content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii.`,
@@ -39,21 +41,46 @@ const offer = {
   ],
 };
 
+// const projects = [
+//   {
+//     title: "Nowoczesne Technologie – Filmy AI i Social Media",
+//     content: `Przecieram szlaki w dziedzinie filmowej sztucznej inteligencji (AI) – stworzyłem m.in. teledysk do utworu "SpaceX"
+//     rapera Anatoma, całkowicie wygenerowany przez AI, a także animowane bajki dla dzieci.
+//     Dzięki doświadczeniu w wideomarketingu pomagam twórcom i markom budować skuteczną obecność w mediach społecznościowych.
+//     Współpracowałem m.in. z Nesterem, Anatomem i 7KaPe7, wspierając ich kampanie oraz rozwój profili.`,
+//   },
+//   {
+//     title: "Społeczna Misja i Współpraca z Fundacjami",
+//     content: `Film ma siłę zmieniania rzeczywistości – dlatego współpracowałem z wieloma fundacjami, m.in. z Fundacją Pogranicze Bez Barier,
+//     pionierem w aktywizacji osób z niepełnosprawnościami, szczególnie osób niewidomych.
+//     Tworzyłem dla nich filmy promocyjne i dokumentalne, w tym poruszający dokument "Dlaczego niewidomi chodzą po górach", który do dziś inspiruje widzów.
+//     Znam się na dostosowywaniu projektów dla osób z niepełnosprawnościami i dbam o to, by każdy film był dostępny i angażujący.`,
+//   },
+// ];
+
+// TODO: zmienic tmp na prawdziwe zdjecia
+const projectsTitle = "Projekty"
 const projects = [
   {
-    title: "Nowoczesne Technologie – Filmy AI i Social Media",
-    content: `Przecieram szlaki w dziedzinie filmowej sztucznej inteligencji (AI) – stworzyłem m.in. teledysk do utworu "SpaceX" 
-    rapera Anatoma, całkowicie wygenerowany przez AI, a także animowane bajki dla dzieci. 
-    Dzięki doświadczeniu w wideomarketingu pomagam twórcom i markom budować skuteczną obecność w mediach społecznościowych. 
-    Współpracowałem m.in. z Nesterem, Anatomem i 7KaPe7, wspierając ich kampanie oraz rozwój profili.`,
+    title: "Moje teledyski",
+    url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOBcs7FBt0SBLyMlKGpO-WKc",
+    bgImg: tmp,
   },
   {
-    title: "Społeczna Misja i Współpraca z Fundacjami",
-    content: `Film ma siłę zmieniania rzeczywistości – dlatego współpracowałem z wieloma fundacjami, m.in. z Fundacją Pogranicze Bez Barier, 
-    pionierem w aktywizacji osób z niepełnosprawnościami, szczególnie osób niewidomych. 
-    Tworzyłem dla nich filmy promocyjne i dokumentalne, w tym poruszający dokument "Dlaczego niewidomi chodzą po górach", który do dziś inspiruje widzów. 
-    Znam się na dostosowywaniu projektów dla osób z niepełnosprawnościami i dbam o to, by każdy film był dostępny i angażujący.`,
+    title: "Moje dokumenty",
+    url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOAeTzPwp1PDMjgr-kWdqxBC",
+    bgImg: tmp,
+  },
+  {
+    title: "Moje filmy fabularne",
+    url: "https://www.youtube.com/watch?v=Mhx2DDlrdwo",
+    bgImg: tmp,
+  },
+  {
+    title: "Moje reklamy",
+    url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOCEdBRUplg3MYM03TJfOqub",
+    bgImg: tmp,
   },
 ];
 
-export { aboutMe, experience, offer, projects, hero };
+export { aboutMe, experience, offer, projects, projectsTitle, hero };
