@@ -6,6 +6,6 @@ export const responsive = {
   heroContent:
     "text-light font-medium text-base sm:text-lg lg:text-xl xl:text-2xl",
 
-  sectionHeading: "font-semibold text-3xl sm:text-4xl lg:5xl xl:6xl",
+  sectionHeading: "font-semibold text-3xl sm:text-4xl lg:5xl xl:6xl mb-5",
   sectionContent: "text-light text-sm sm:text-base lg:text-lg xl:text-xl",
 };

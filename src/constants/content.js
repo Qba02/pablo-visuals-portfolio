@@ -8,8 +8,9 @@ const aboutMe = {
   content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii. 
     Pierwsze filmy montowałem jako dziecko, kiedy kolega pokazał mi podstawowy program do edycji, a ja złożyłem swój pierwszy wakacyjny film. 
     Jeszcze wcześniej, bawiąc się żołnierzykami, instynktownie tworzyłem poklatkowe animacje. 
-    To były początki – dziś zajmuję się szeroko pojętą kreacją filmową, realizując reklamy, teledyski, dokumenty, filmy okolicznościowe oraz fabularne.
-    Mój znak rozpoznawczy? Kreatywność, nieszablonowe podejście i odwaga w eksplorowaniu nowych form przekazu. 
+    To były początki – dziś zajmuję się szeroko pojętą kreacją filmową, realizując reklamy, teledyski, dokumenty,
+     filmy okolicznościowe oraz fabularne.`,
+  subcontent: `Mój znak rozpoznawczy? Kreatywność, nieszablonowe podejście i odwaga w eksplorowaniu nowych form przekazu. 
     Nie boję się wyzwań – każda produkcja to dla mnie szansa na stworzenie czegoś wyjątkowego. 
     Moje logo, rzymski hełm legionisty, symbolizuje pasję, determinację i filmowe korzenie, które kształtowały mnie od najmłodszych lat.`,
 };
