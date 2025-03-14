@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex items-center justify-center w-full py-4 px-10 transition-all duration-500 ${
-        onTop ? "bg-transparent" : "bg-dark"
+      className={`fixed top-0 z-50 flex items-center justify-center w-full py-3 px-10 transition-all duration-500 ease-in ${
+        onTop ? "bg-transparent py-8" : "bg-darkGrey nav-shadow"
       }`}
     >
       <div className="w-full flex justify-between">
@@ -34,7 +34,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="PabloVisuals logo - spartan helmet"
-            className="w-20 h-20 object-contain hover:scale-110 
+            className="w-16 h-16 object-contain hover:scale-110 
             hover:-rotate-6 transition-transform duration-500"
           />
         </Link>

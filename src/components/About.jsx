@@ -15,7 +15,7 @@ const About = () => {
           {aboutMe.subcontent}
         </p>
       </div>
-      <div className="rounded-xl w-[40%] shadow-lg shadow-secondary">
+      <div className="rounded-xl w-[40%] box-shadow">
         <img
           src={profilePic}
           alt="My profile picture"
