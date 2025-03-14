@@ -4,7 +4,7 @@ import {
   Navbar,
   Hero,
   About,
-  Experience,
+  Offer,
   Projects,
   Contact,
 } from "./components/index.js";
@@ -20,8 +20,8 @@ const App = () => {
 
         <div>
           <About />
-          {/* <Experience /> */}
           <Projects />
+          <Offer />
           <Contact />
         </div>
       </main>

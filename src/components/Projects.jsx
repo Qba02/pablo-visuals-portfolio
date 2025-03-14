@@ -5,12 +5,12 @@ import { responsive } from "../responsive";
 
 const Projects = () => {
   return (
-    <section className="section flex flex-col items-center justify-between h-[400px] lg:h-[600px]">
-      <div className="h-[15%]">
+    <section className="section flex flex-col items-center justify-between h-[300px] sm:h-[400px] lg:h-[550px]">
+      {/* <div className="h-[15%] w-full">
         <h2 className={`${responsive.sectionHeading}`}>{projectsTitle}</h2>
-      </div>
+      </div> */}
 
-      <div className="relative w-[70%] h-[85%]">
+      <div className="relative w-[70%] h-full">
         <Slider>
           {projects.map((project, index) => (
             <Card

@@ -1,6 +1,14 @@
 import { tmp } from "../assets/index";
+import { RiAdvertisementLine } from "react-icons/ri";
+import { MdOutlineMusicVideo } from "react-icons/md";
+import { PiFilmReel } from "react-icons/pi";
+import { PiFilmStrip } from "react-icons/pi";
+import { PiVideoConference } from "react-icons/pi";
+import { IoIosPeople } from "react-icons/io";
 
 const hero = {
+
+  
   title: "Paweł Kanik",
   content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii.`,
 };
@@ -32,12 +40,32 @@ const offer = {
   Przed realizacją dokładnie omawiam wizję z klientem, klarownie przedstawiam wycenę oraz planuję każdy etap produkcji.`,
   subtitle: "Oferuję:",
   points: [
-    "Reklamy i filmy promocyjne",
-    "Teledyski i filmy artystyczne",
-    "Dokumenty i reportaże",
-    "Filmy okolicznościowe (śluby, studniówki, eventy)",
-    "Montaż na zamówienie",
-    "Konsultacje i doradztwo w zakresie wideomarketingu",
+    {
+      title: "Reklamy i\u00A0filmy promocyjne",
+      icon: RiAdvertisementLine,
+    },
+    {
+      title: "Teledyski i\u00A0filmy artystyczne",
+      icon: MdOutlineMusicVideo,
+    },
+    {
+      title: "Dokumenty i\u00A0reportaże",
+      icon: PiFilmReel,
+    },
+    {
+      title: "Filmy okolicznościowe",
+      subtitle: "(śluby, studniówki, eventy)",
+      icon: IoIosPeople,
+    },
+    {
+      title: "Montaż na zamówienie",
+      icon: PiFilmStrip,
+    },
+    {
+      title: "Konsultacje i\u00A0doradztwo",
+      subtitle: "(w zakresie wideomarketingu)",
+      icon: PiVideoConference,
+    },
   ],
 };
 
@@ -59,7 +87,7 @@ const offer = {
 // ];
 
 // TODO: zmienic tmp na prawdziwe zdjecia
-const projectsTitle = "Projekty"
+const projectsTitle = "Projekty";
 const projects = [
   {
     title: "Moje teledyski",

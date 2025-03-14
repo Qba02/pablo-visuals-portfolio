@@ -8,7 +8,7 @@ const MAX_VISIBILITY = 3;
 
 export const Card = ({ title, bgImg, url }) => (
   <div
-    className="ralative w-full h-full card bg-cover bg-center bg-no-repeat p-8 rounded-3xl
+    className="ralative w-full h-full bg-cover bg-center bg-no-repeat p-8 rounded-3xl
      transition-all duration-300 ease-out"
     style={{ backgroundImage: `url(${bgImg})` }}
   >

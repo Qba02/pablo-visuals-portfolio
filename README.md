@@ -15,3 +15,9 @@ If you are developing a production application, we recommend using TypeScript an
 
 IoIosArrowDropleft (react-icons MIT license)
 IoIosArrowDropright (react-icons MIT license)
+IoIosPeople (react-icons MIT license)
+RiAdvertisementLine (react-icons Apache 2.0 license)
+MdOutlineMusicVideo (react-icons Apache 2.0 license)
+PiFilmReel (react-icons MIT license)
+PiFilmStrip (react-icons MIT license)
+PiVideoConference (react-icons MIT license)
