@@ -11,7 +11,7 @@ const Hero = () => {
   const instaLink = externalLinks.find((link) => link.id === "insta");
 
   return (
-    <section
+    <section id="hero"
       className="relative w-full h-screen mx-auto bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBg2})` }}
     >

@@ -4,12 +4,12 @@ const navLinks = [
     title: "O mnie",
   },
   {
-    id: "offer",
-    title: "Oferta",
-  },
-  {
     id: "projects",
     title: "Projekty",
+  },
+  {
+    id: "offer",
+    title: "Oferta",
   },
   {
     id: "contact",

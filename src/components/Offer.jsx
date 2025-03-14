@@ -21,7 +21,7 @@ export const Card = ({ title, icon, subtitle, index }) => (
 
 const Offer = () => {
   return (
-    <section className="section">
+    <section id="offer" className="section">
       <div className="mb-10">
         <h2 className={`${responsive.sectionHeading}`}>{offer.title}</h2>
         <p className={`${responsive.sectionContent} text-justify`}>

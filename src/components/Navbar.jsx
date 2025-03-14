@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { navLinks } from "../constants/links";
 import { logo } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [onTop, setOnTop] = useState(true);
 
   useEffect(() => {
@@ -27,29 +26,29 @@ const Navbar = () => {
           to="/"
           className="flex items-center"
           onClick={() => {
-            setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <img
             src={logo}
             alt="PabloVisuals logo - spartan helmet"
-            className="w-16 h-16 object-contain hover:scale-110 
+            className="cursor-pointer w-16 h-16 object-contain hover:scale-110 
             hover:-rotate-6 transition-transform duration-500"
           />
         </Link>
         <ul className="list-none flex items-center gap-12">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a
-                href={`#${link.id}`}
-                className={`${
-                  active === link.id ? "text-secondary" : "text-white"
-                } nav`}
-                onClick={() => setActive(link.id)}
+              <Link
+                to={link.id}
+                smooth={true}
+                duration={100}
+                className="nav"
+                spy={true}
+                activeClass="text-secondary"
               >
                 {link.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

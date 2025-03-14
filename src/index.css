@@ -13,7 +13,7 @@
 
 @layer utilities {
   .nav {
-    @apply relative text-xl font-medium hover:text-secondary transition-all duration-500;
+    @apply relative cursor-pointer text-xl font-medium hover:text-secondary transition-all duration-500;
   }
 
   .nav::after {

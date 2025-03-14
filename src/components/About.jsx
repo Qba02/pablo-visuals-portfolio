@@ -5,7 +5,7 @@ import { profilePic } from "../assets/index";
 
 const About = () => {
   return (
-    <section className="section flex items-center justify-between">
+    <section id="about" className="section flex items-center justify-between">
       <div className="w-[50%]">
         <h2 className={`${responsive.sectionHeading}`}>{aboutMe.title}</h2>
         <p className={`${responsive.sectionContent} text-justify`}>
