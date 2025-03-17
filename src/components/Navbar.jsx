@@ -45,6 +45,7 @@ const Navbar = () => {
                 duration={100}
                 className="nav"
                 spy={true}
+                offset={-150}
                 activeClass="text-secondary"
               >
                 {link.title}

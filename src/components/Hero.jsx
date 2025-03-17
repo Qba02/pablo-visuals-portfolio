@@ -5,13 +5,15 @@ import { responsive } from "../responsive";
 import { SiYoutube } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
 import { externalLinks } from "../constants/links";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   const ytLink = externalLinks.find((link) => link.id === "yt");
   const instaLink = externalLinks.find((link) => link.id === "insta");
 
   return (
-    <section id="hero"
+    <section
+      id="hero"
       className="relative w-full h-screen mx-auto bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBg2})` }}
     >
@@ -19,18 +21,36 @@ const Hero = () => {
         <h1 className={`${responsive.heroHeading}`}>{hero.title}</h1>
         <p className={`${responsive.heroContent} mt-5 w-1/2`}>{hero.content}</p>
         <div className="flex  space-x-6 mt-5">
-          <button
-            className={`text-lg border-[3px] border-secondary text-secondary px-7 py-2 rounded-md font-semibold
-            hover:text-light hover:border-light transition duration-500 ease-in-out`}
+          <Link
+            to="contact"
+            smooth={true}
+            duration={100}
+            className={`cursor-pointer text-lg border-[3px] border-secondary text-secondary px-7 py-2 rounded-md font-semibold
+                hover:text-light hover:border-light transition duration-500 ease-in-out`}
+            offset={-120}
           >
-            <span>Kontakt</span>
-          </button>
-          <button
-            className={`text-lg border-[3px] bg-light text-dark px-7 py-2 rounded-md font-semibold
-             hover:bg-transparent hover:border-light hover:text-light transition duration-500 ease-in-out`}
+            Kontakt
+          </Link>
+          <Link
+            to="offer"
+            smooth={true}
+            duration={100}
+            className={`cursor-pointer text-lg border-[3px] bg-light text-dark px-7 py-2 rounded-md font-semibold
+              hover:bg-transparent hover:border-light hover:text-light transition duration-500 ease-in-out`}
+            offset={-120}
+          >
+            &nbsp;Oferta&nbsp;
+          </Link>
+          {/* <button
+
+            onClick={() =>
+              document
+                .getElementById("offer")
+                .scrollIntoView({ behavior: "smooth" })
+            }
           >
             <span>&nbsp;Oferta&nbsp;</span>
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="absolute bottom-[5%] right-[2%] flex flex-col space-y-5 items-center">
