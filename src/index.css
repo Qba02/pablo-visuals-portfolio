@@ -76,4 +76,8 @@
     box-shadow: 0px 10px 20px #000000;
     background: linear-gradient(rgba(255, 255, 255, 0.101), transparent);
   }
+
+  .contact-input{
+    @apply bg-dark placeholder:text-light placeholder:text-sm outline-none border-b-[1px] border-light py-4 pr-4
+  }
 }

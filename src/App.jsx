@@ -7,6 +7,7 @@ import {
   Offer,
   Projects,
   Contact,
+  Footer,
 } from "./components/index.js";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <Offer />
           <Contact />
         </div>
+        <Footer></Footer>
       </main>
     </BrowserRouter>
   );

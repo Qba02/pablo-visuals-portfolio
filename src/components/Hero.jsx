@@ -41,16 +41,6 @@ const Hero = () => {
           >
             &nbsp;Oferta&nbsp;
           </Link>
-          {/* <button
-
-            onClick={() =>
-              document
-                .getElementById("offer")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <span>&nbsp;Oferta&nbsp;</span>
-          </button> */}
         </div>
       </div>
       <div className="absolute bottom-[5%] right-[2%] flex flex-col space-y-5 items-center">
