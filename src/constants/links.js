@@ -26,4 +26,6 @@ const externalLinks = [
   },
 ];
 
-export { externalLinks, navLinks };
+const contactEmail = "pablovisuals.kontakt@gmail.com";
+
+export { externalLinks, navLinks, contactEmail };

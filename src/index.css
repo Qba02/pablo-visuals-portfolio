@@ -77,7 +77,12 @@
     background: linear-gradient(rgba(255, 255, 255, 0.101), transparent);
   }
 
-  .contact-input{
-    @apply bg-dark placeholder:text-light placeholder:text-sm outline-none border-b-[1px] border-light py-4 pr-4
+  .contact-input {
+    @apply bg-dark placeholder:text-light placeholder:text-sm outline-none border-b-[1px] border-light py-4 pr-4;
+  }
+
+  .icon-circle-box {
+    @apply flex items-center justify-center rounded-[50%] w-12 h-12 border-tertiary border-[1px] p-1
+    hover:border-white hover:scale-95 transition-all duration-300;
   }
 }

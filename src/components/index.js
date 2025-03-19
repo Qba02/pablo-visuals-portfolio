@@ -5,8 +5,8 @@ import Offer from "./Offer";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { Slider, SliderCard } from "./Slider";
-import EnvelopeCanvas from "./EnvelopeCanvas";
+import { Slider, SliderCard } from "./utils/Slider";
+import EnvelopeCanvas from "./utils/EnvelopeCanvas";
 
 export {
   Navbar,

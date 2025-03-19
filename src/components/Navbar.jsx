@@ -22,13 +22,7 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between">
-        <Link
-          to="/"
-          className="flex items-center"
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-        >
+        <Link to="hero" className="flex items-center">
           <img
             src={logo}
             alt="PabloVisuals logo - spartan helmet"

@@ -18,6 +18,8 @@ If you are developing a production application, we recommend using TypeScript an
 
 - RiAdvertisementLine
 - MdOutlineMusicVideo
+- MdMail
+- RiArrowUpSLine
 
 **MIT license**:
 
@@ -29,5 +31,6 @@ If you are developing a production application, we recommend using TypeScript an
 - IoIosPeople
 
 CC0 1.0 Universal
-- import SiYoutube
-- import SiInstagram
+
+- SiYoutube
+- SiInstagram
