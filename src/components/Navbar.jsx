@@ -17,8 +17,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex items-center justify-center w-full py-3 px-10 transition-all duration-500 ease-in ${
-        onTop ? "bg-transparent py-8" : "bg-darkGrey nav-shadow"
+      className={`fixed top-0 z-50 flex items-center justify-center w-full py-3  px-10 transition-all duration-500 ease-in ${
+        onTop ? "bg-transparent py-8" : "bg-darkGrey/80 nav-shadow backdrop-blur-md"
       }`}
     >
       <div className="w-full flex justify-between">

@@ -4,10 +4,10 @@ import { responsive } from "../responsive";
 
 export const Card = ({ title, icon, subtitle, index }) => (
   <div
-    className={` offer-card relative min-h-36 sm:min-h-48 lg:min-h-56 text-center 
-    rounded-xl overflow-hidden border-tertiary border-[1px] backdrop-blur-sm
-    hover:scale-110  transition-all duration-300 ease-in
-    ${ (index %2) === 0 ? "hover:rotate-3" : "hover:-rotate-3"}`}
+    className={`offer-card relative min-h-36 sm:min-h-48 lg:min-h-56 text-center 
+    rounded-xl border-tertiary border-[1px] backdrop-blur-sm overflow-hidden
+    hover:scale-110 transition-all duration-300 ease-in
+    ${index % 2 === 0 ? "hover:rotate-3" : "hover:-rotate-3"}`}
   >
     <div className="flex w-full h-[70%] justify-center items-center  px-4">
       {icon}

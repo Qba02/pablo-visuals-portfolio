@@ -13,7 +13,7 @@ const About = () => {
         </p>
         <p className={`${responsive.sectionContent} text-justify mt-4`}>
           {aboutMe.startSubcontent}
-          <span className="text-secondary font-semibold">{aboutMe.boldSubcontent}</span>
+          <span className="text-secondary/80 font-semibold">{aboutMe.boldSubcontent}</span>
           {aboutMe.endSubcontent}
         </p>
       </div>

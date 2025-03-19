@@ -49,7 +49,7 @@ const Footer = () => {
           className="relative group icon-circle-box"
         >
           <span className="absolute top-[-50%] -translate-y-1/2 text-light text-sm">
-            {copied ? <>✔&nbsp;Skopiowano&nbsp;email</> : ""}
+            {copied ? <>Skopiowano&nbsp;email</> : ""}
           </span>
           <MdMail onClick={copyToClipboard} className="w-6 h-6"></MdMail>
         </div>
