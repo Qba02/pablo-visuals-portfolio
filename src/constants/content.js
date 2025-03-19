@@ -1,4 +1,9 @@
-import { tmp } from "../assets/index";
+import {
+  projectAd,
+  projectDocument,
+  projectMusic,
+  projectPlot,
+} from "../assets/index";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { MdOutlineMusicVideo } from "react-icons/md";
 import { PiFilmReel } from "react-icons/pi";
@@ -7,8 +12,6 @@ import { PiVideoConference } from "react-icons/pi";
 import { IoIosPeople } from "react-icons/io";
 
 const hero = {
-
-  
   title: "Paweł Kanik",
   content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii.`,
 };
@@ -20,9 +23,11 @@ const aboutMe = {
     Jeszcze wcześniej, bawiąc się żołnierzykami, instynktownie tworzyłem poklatkowe animacje. 
     To były początki – dziś zajmuję się szeroko pojętą kreacją filmową, realizując reklamy, teledyski, dokumenty,
      filmy okolicznościowe oraz fabularne.`,
-  subcontent: `Mój znak rozpoznawczy? Kreatywność, nieszablonowe podejście i odwaga w eksplorowaniu nowych form przekazu. 
-    Nie boję się wyzwań – każda produkcja to dla mnie szansa na stworzenie czegoś wyjątkowego. 
-    Moje logo, rzymski hełm legionisty, symbolizuje pasję, determinację i filmowe korzenie, które kształtowały mnie od najmłodszych lat.`,
+  startSubcontent: `Mój znak rozpoznawczy?`,
+  boldSubcontent: ` Kreatywność, nieszablonowe podejście i odwaga w eksplorowaniu nowych form przekazu. `,
+  endSubcontent: `Nie boję się wyzwań – każda produkcja to dla mnie szansa na stworzenie czegoś wyjątkowego. 
+    Moje logo, rzymski hełm legionisty, symbolizuje pasję, determinację i filmowe korzenie, 
+    które kształtowały mnie od najmłodszych lat.`,
 };
 
 const experience = {
@@ -86,28 +91,27 @@ const offer = {
 //   },
 // ];
 
-// TODO: zmienic tmp na prawdziwe zdjecia
 const projectsTitle = "Projekty";
 const projects = [
   {
     title: "Moje teledyski",
     url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOBcs7FBt0SBLyMlKGpO-WKc",
-    bgImg: tmp,
+    bgImg: projectMusic,
   },
   {
     title: "Moje dokumenty",
     url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOAeTzPwp1PDMjgr-kWdqxBC",
-    bgImg: tmp,
+    bgImg: projectDocument,
   },
   {
     title: "Moje filmy fabularne",
     url: "https://www.youtube.com/watch?v=Mhx2DDlrdwo",
-    bgImg: tmp,
+    bgImg: projectPlot,
   },
   {
     title: "Moje reklamy",
     url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOCEdBRUplg3MYM03TJfOqub",
-    bgImg: tmp,
+    bgImg: projectAd,
   },
 ];
 

@@ -12,7 +12,9 @@ const About = () => {
           {aboutMe.content}
         </p>
         <p className={`${responsive.sectionContent} text-justify mt-4`}>
-          {aboutMe.subcontent}
+          {aboutMe.startSubcontent}
+          <span className="text-secondary font-semibold">{aboutMe.boldSubcontent}</span>
+          {aboutMe.endSubcontent}
         </p>
       </div>
       <div className="rounded-xl w-[40%] box-shadow">
