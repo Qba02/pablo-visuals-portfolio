@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const Model = () => {
-  const { scene } = useGLTF("./models/koperta2.glb");
+  const { scene } = useGLTF("./models/koperta3.glb");
   return <primitive object={scene} scale={1} rotation-x={1.57} />;
 };
 
