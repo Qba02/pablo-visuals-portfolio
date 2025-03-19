@@ -1,12 +1,13 @@
 import React from "react";
 import { responsive } from "../responsive";
+import { EnvelopeCanvas } from "../components/index";
 
 const Contact = () => {
   return (
     <section id="contact" className="section">
-      <div>
-        <h3 className={`${responsive.sectionHeading}`}>Skontaktuj się</h3>
-        <form className="flex flex-col w-[40%] p-4 gap-8 justify-around">
+      <div className="flex flex-col lg:flex-row justify-around">
+        <form className="flex flex-col w-full lg:w-[40%] p-4 gap-8 justify-around">
+          <h3 className={`${responsive.sectionHeading}`}>Skontaktuj się</h3>
           <input
             type="text"
             name="name"
@@ -33,7 +34,9 @@ const Contact = () => {
             Wyślij
           </button>
         </form>
-        <div className="w-[50%]"></div>
+        <div className="w-full lg:w-[50%]">
+          <EnvelopeCanvas />
+        </div>
       </div>
     </section>
   );
