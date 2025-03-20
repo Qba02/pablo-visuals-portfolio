@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="relative flex flex-col items-center gap-5 p-6 w-full my-3"
+      className="relative flex flex-col items-center gap-5 p-6 w-full mt-3"
     >
       <div
         aria-hidden="true"

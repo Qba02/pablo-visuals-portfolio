@@ -17,18 +17,21 @@ const Hero = () => {
       className="relative w-full h-screen mx-auto bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBg2})` }}
     >
-      <div className="absolute top-[55%] left-[12%] -translate-y-1/2">
+      <div className="absolute top-[55%] left-[15%] -translate-y-1/2">
         <h1 className={`${responsiveText.heroHeading}`}>{hero.title}</h1>
-        <p className={`${responsiveText.heroContent} mt-5 w-1/2`}>
+        <p
+          className={`${responsiveText.heroContent} text-justify italic mt-1 sm:mt-2 lg:mt-5 w-1/3`}
+        >
           {hero.content}
         </p>
+
         <div className="flex  space-x-6 mt-5">
           <Link
             to="contact"
             smooth={true}
             duration={100}
-            className={`cursor-pointer text-lg border-[3px] border-secondary text-secondary px-7 py-2 rounded-md font-semibold
-                hover:text-light hover:border-light transition duration-500 ease-in-out`}
+            className={`cursor-pointer text-lg border-[3px] border-secondary text-secondary px-7 
+              py-2 rounded-md font-medium hover:text-light hover:border-light transition duration-500 ease-in-out`}
             offset={-120}
           >
             Kontakt
@@ -37,7 +40,7 @@ const Hero = () => {
             to="offer"
             smooth={true}
             duration={100}
-            className={`cursor-pointer text-lg border-[3px] bg-light text-dark px-7 py-2 rounded-md font-semibold
+            className={`cursor-pointer text-lg border-[3px] bg-light text-dark px-7 py-2 rounded-md font-medium
               hover:bg-transparent hover:border-light hover:text-light transition duration-500 ease-in-out`}
             offset={-120}
           >
@@ -47,7 +50,8 @@ const Hero = () => {
       </div>
       <div className="absolute bottom-[5%] right-[2%] flex flex-col space-y-5 items-center">
         <div
-          className="rounded-sm hidden sm:block w-[3px] h-48 xl:h-80 bg-gradient-to-b from-dark via-gray-500 to-light opacity-90"
+          className="rounded-sm hidden sm:block w-[3px] h-48 xl:h-80 bg-gradient-to-b from-dark via-gray-500
+          to-light opacity-90"
           aria-hidden="true"
         ></div>
         <a href={ytLink.href} target="_blank" rel="noopener noreferrer">

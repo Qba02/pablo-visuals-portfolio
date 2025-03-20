@@ -1,6 +1,7 @@
 import React from "react";
 import { offer } from "../constants/content";
 import { responsiveText } from "../styles/responsiveText";
+import { BsExclamationCircle } from "react-icons/bs";
 
 export const Card = ({ title, icon, subtitle, index }) => (
   <div
@@ -13,7 +14,7 @@ export const Card = ({ title, icon, subtitle, index }) => (
       {icon}
     </div>
     <div className="flex flex-col w-full h-[30%] justify-center items-center  px-2 bg-white/10">
-      <h3 className="text-base lg:text-lg font-semibold ">{title}</h3>
+      <h3 className="text-base lg:text-lg">{title}</h3>
       <p className="text-sm lg:text-base font-light text-light">{subtitle}</p>
     </div>
   </div>
@@ -22,9 +23,10 @@ export const Card = ({ title, icon, subtitle, index }) => (
 const Offer = () => {
   return (
     <section id="offer" className="section">
-      <div className="mb-10">
-        <h2 className={`${responsiveText.sectionHeading}`}>{offer.title}</h2>
-      </div>
+      <h2 className={`${responsiveText.sectionHeading} section-title`}>
+        {offer.title}
+        <span>{offer.tagline}</span>
+      </h2>
       <div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(310px,1fr))] justify-center">
         {offer.points.map((offer, index) => (
           <Card
@@ -38,7 +40,10 @@ const Offer = () => {
           ></Card>
         ))}
       </div>
-      <p className={`${responsiveText.sectionContent} text-center p-6 mt-8 `}>
+      <p
+        className={`${responsiveText.sectionContent} relative text-center p-6 mt-8 border-[1px] border-tertiary rounded-lg`}
+      >
+        <BsExclamationCircle className="inline absolute -top-2 -left-2 w-7 h-7 bg-dark"></BsExclamationCircle>
         {offer.description}
       </p>
     </section>

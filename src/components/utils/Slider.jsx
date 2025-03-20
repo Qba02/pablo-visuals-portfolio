@@ -12,12 +12,11 @@ export const SliderCard = ({ title, bgImg, url }) => (
      transition-all duration-300 ease-out"
     style={{ backgroundImage: `url(${bgImg})` }}
   >
-    <h3 className="text-left text-2xl lg:text-4xl font-semibold projects-title-shadow">
+    <h3 className="text-left text-xl lg:text-3xl font-medium projects-title-shadow">
       {title}
     </h3>
     <a href={url} target="_blank" rel="noopener noreferrer">
-      {/* <SiYoutube className="social-icon lg:w-24 lg:h-24 absolute bottom-[5%] right-[5%]"></SiYoutube> */}
-      <SiYoutube className="social-icon lg:w-28 lg:h-28 opacity-60
+      <SiYoutube className="social-icon lg:w-28 lg:h-28 opacity-80
       absolute bottom-[50%] right-[50%] translate-x-1/2 translate-y-1/2"></SiYoutube>
     </a>
   </div>

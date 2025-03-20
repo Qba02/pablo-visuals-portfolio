@@ -18,16 +18,19 @@ const hero = {
 
 const aboutMe = {
   title: "O mnie",
-  content: `Jestem filmowcem z pasji – odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii. 
+  tagline: "Film to emocje, które zostają na długo",
+  subtitle: "Jestem filmowcem z pasji",
+  content: `odkąd pamiętam, tworzenie obrazów było moim sposobem na opowiadanie historii. 
     Pierwsze filmy montowałem jako dziecko, kiedy kolega pokazał mi podstawowy program do edycji, a ja złożyłem swój pierwszy wakacyjny film. 
     Jeszcze wcześniej, bawiąc się żołnierzykami, instynktownie tworzyłem poklatkowe animacje. 
     To były początki – dziś zajmuję się szeroko pojętą kreacją filmową, realizując reklamy, teledyski, dokumenty,
      filmy okolicznościowe oraz fabularne.`,
-  startSubcontent: `Mój znak rozpoznawczy?`,
-  boldSubcontent: ` Kreatywność, nieszablonowe podejście i odwaga w eksplorowaniu nowych form przekazu. `,
-  endSubcontent: `Nie boję się wyzwań – każda produkcja to dla mnie szansa na stworzenie czegoś wyjątkowego. 
+  subcontent: `Mój znak rozpoznawczy? Kreatywność, nieszablonowe podejście i odwaga w eksplorowaniu nowych form przekazu. 
+  Nie boję się wyzwań – każda produkcja to dla mnie szansa na stworzenie czegoś wyjątkowego. 
     Moje logo, rzymski hełm legionisty, symbolizuje pasję, determinację i filmowe korzenie, 
     które kształtowały mnie od najmłodszych lat.`,
+  quote: `„Niektóre filmy są kawałkiem życia, moje są kawałkiem ciasta.”`,
+  quoteAuthor: `Alfred Hitchcock`,
 };
 
 const experience = {
@@ -41,6 +44,7 @@ const experience = {
 
 const offer = {
   title: "Oferta",
+  tagline: "Film skrojony na miarę Twojej wizji",
   description: `Każdy projekt wyceniam indywidualnie, uwzględniając jego zakres i specyfikę. 
   Przed realizacją dokładnie omawiam wizję z klientem, klarownie przedstawiam wycenę oraz planuję każdy etap produkcji.`,
   subtitle: "Oferuję:",
@@ -91,28 +95,36 @@ const offer = {
 //   },
 // ];
 
-const projectsTitle = "Projekty";
-const projects = [
-  {
-    title: "Moje teledyski",
-    url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOBcs7FBt0SBLyMlKGpO-WKc",
-    bgImg: projectMusic,
-  },
-  {
-    title: "Moje dokumenty",
-    url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOAeTzPwp1PDMjgr-kWdqxBC",
-    bgImg: projectDocument,
-  },
-  {
-    title: "Moje filmy fabularne",
-    url: "https://www.youtube.com/watch?v=Mhx2DDlrdwo",
-    bgImg: projectPlot,
-  },
-  {
-    title: "Moje reklamy",
-    url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOCEdBRUplg3MYM03TJfOqub",
-    bgImg: projectAd,
-  },
-];
+const projects = {
+  title: "Projekty",
+  tagline: "Kreatywność, unikalność, pasja",
+  points: [
+    {
+      title: "Moje teledyski",
+      url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOBcs7FBt0SBLyMlKGpO-WKc",
+      bgImg: projectMusic,
+    },
+    {
+      title: "Moje dokumenty",
+      url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOAeTzPwp1PDMjgr-kWdqxBC",
+      bgImg: projectDocument,
+    },
+    {
+      title: "Moje filmy fabularne",
+      url: "https://www.youtube.com/watch?v=Mhx2DDlrdwo",
+      bgImg: projectPlot,
+    },
+    {
+      title: "Moje reklamy",
+      url: "https://www.youtube.com/playlist?list=PLkfssrvUdpOCEdBRUplg3MYM03TJfOqub",
+      bgImg: projectAd,
+    },
+  ],
+};
 
-export { aboutMe, experience, offer, projects, projectsTitle, hero };
+const contact = {
+  title: "Kontakt",
+  tagline: "Porozmawiajmy o Twojej wizji",
+};
+
+export { aboutMe, experience, offer, projects, hero, contact };

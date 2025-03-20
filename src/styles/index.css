@@ -13,7 +13,7 @@
 
 @layer utilities {
   .nav {
-    @apply relative cursor-pointer text-xl font-medium hover:text-secondary transition-all duration-500;
+    @apply relative cursor-pointer text-xl hover:text-secondary transition-all duration-500;
   }
 
   .nav::after {
@@ -31,6 +31,19 @@
 
   .section {
     @apply relative w-full py-6 mx-auto px-[8%] mt-16;
+  }
+
+  .section-title {
+    @apply text-center uppercase relative;
+  }
+
+  .section-title::before {
+    content: "";
+    @apply absolute left-1/2 bottom-0 transform -translate-x-1/2 h-[1px] w-[10%] bg-secondary;
+  }
+
+  .section-title span {
+    @apply block text-xl uppercase tracking-[4px] leading-[2.5em] text-tertiary;
   }
 
   .perspective-800 {
@@ -74,7 +87,7 @@
 
   .offer-card {
     box-shadow: 0px 10px 20px #000000;
-    /* background: linear-gradient(rgba(255, 255, 255, 0.101), transparent); */
+    background: linear-gradient(rgba(255, 255, 255, 0.03), transparent);
   }
   .contact-input {
     @apply w-full bg-transparent placeholder:text-light placeholder:text-sm outline-none 
@@ -93,14 +106,6 @@
   }
 
   .projects-title-shadow {
-    text-shadow: 2px 2px 10px rgb(0, 0, 0), -2px -2px 10px rgb(0, 0, 0);
-  }
-  .engrave-shadow {
-    background: #808080;
-    color: transparent;
-    text-shadow: #141414 2px 2px 0px;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), -2px -2px 10px rgb(0, 0, 0);
   }
 }
