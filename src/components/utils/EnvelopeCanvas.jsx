@@ -23,7 +23,7 @@ const EnvelopeCanvas = () => {
     <Canvas
       shadows={false}
       frameloop="demand"
-      camera={{ position: [2, 4, 2], fov: 60 }}
+      camera={{ position: [2, 3, 2], fov: 60 }}
       dpr={isLowPerformance ? 1 : [1, 2]}
     >
       <FixedLight />

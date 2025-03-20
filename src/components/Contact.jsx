@@ -5,7 +5,7 @@ import { responsive } from "../responsive";
 const Contact = () => {
   return (
     <section id="contact" className="section">
-      <h3 className={`${responsive.sectionHeading}`}>Kontakt</h3>
+      <h2 className={`${responsive.sectionHeading}`}>Kontakt</h2>
       <div className="flex flex-col lg:flex-row justify-around">
         <div className="w-full lg:w-[40%]">
           <ContactForm />

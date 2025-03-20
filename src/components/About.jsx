@@ -13,11 +13,11 @@ const About = () => {
         </p>
         <p className={`${responsive.sectionContent} text-justify mt-4`}>
           {aboutMe.startSubcontent}
-          <span className="text-secondary/80 font-semibold">{aboutMe.boldSubcontent}</span>
+          <span className="font-bold text-rose-200">{aboutMe.boldSubcontent}</span>
           {aboutMe.endSubcontent}
         </p>
       </div>
-      <div className="rounded-xl w-[40%] box-shadow">
+      <div className="rounded-xl w-[40%] box-shadow ">
         <img
           src={profilePic}
           alt="My profile picture"

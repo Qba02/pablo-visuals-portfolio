@@ -12,7 +12,7 @@ export const SliderCard = ({ title, bgImg, url }) => (
      transition-all duration-300 ease-out"
     style={{ backgroundImage: `url(${bgImg})` }}
   >
-    <h3 className="text-left text-2xl lg:text-4xl font-semibold engrave-shadow">
+    <h3 className="text-left text-2xl lg:text-4xl font-semibold projects-title-shadow">
       {title}
     </h3>
     <a href={url} target="_blank" rel="noopener noreferrer">

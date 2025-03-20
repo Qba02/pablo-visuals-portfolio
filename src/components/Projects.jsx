@@ -1,6 +1,7 @@
 import React from "react";
 import { Slider, SliderCard } from "../components/index";
 import { projects, projectsTitle } from "../constants/content";
+import { responsive } from "../responsive";
 
 const Projects = () => {
   return (
@@ -8,6 +9,7 @@ const Projects = () => {
       id="projects"
       className="section flex flex-col items-center justify-between h-[300px] sm:h-[400px] lg:h-[550px]"
     >
+      <h2 className={responsive.sectionHeading}>{projectsTitle}</h2>
       <div className="relative w-[70%] h-full">
         <Slider>
           {projects.map((project, index) => (
