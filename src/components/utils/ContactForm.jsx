@@ -2,8 +2,8 @@ import React from "react";
 
 function ContactForm() {
   return (
-    <form className="flex flex-col p-4 gap-8 justify-around">
-      <div className="relative">
+    <form className="flex flex-col p-6 gap-8 justify-around">
+      <div className="relative ">
         <input
           id="nameInput"
           type="text"

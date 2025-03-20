@@ -1,11 +1,11 @@
 import React from "react";
 import { EnvelopeCanvas, ContactForm } from "../components/index";
-import { responsive } from "../responsive";
+import { responsiveText } from "../styles/responsiveText";
 
 const Contact = () => {
   return (
     <section id="contact" className="section">
-      <h2 className={`${responsive.sectionHeading}`}>Kontakt</h2>
+      <h2 className={`${responsiveText.sectionHeading}`}>Kontakt</h2>
       <div className="flex flex-col lg:flex-row justify-around">
         <div className="w-full lg:w-[40%]">
           <ContactForm />

@@ -1,11 +1,11 @@
 import React from "react";
 import { offer } from "../constants/content";
-import { responsive } from "../responsive";
+import { responsiveText } from "../styles/responsiveText";
 
 export const Card = ({ title, icon, subtitle, index }) => (
   <div
     className={`offer-card relative min-h-36 sm:min-h-48 lg:min-h-56 text-center 
-    rounded-sm backdrop-blur-sm overflow-hidden border-tertiary border-[1px]
+    rounded-2xl backdrop-blur-sm overflow-hidden border-tertiary border-[1px]
     hover:scale-110 transition-all duration-300 ease-in
     ${index % 2 === 0 ? "hover:rotate-3" : "hover:-rotate-3"}`}
   >
@@ -23,7 +23,7 @@ const Offer = () => {
   return (
     <section id="offer" className="section">
       <div className="mb-10">
-        <h2 className={`${responsive.sectionHeading}`}>{offer.title}</h2>
+        <h2 className={`${responsiveText.sectionHeading}`}>{offer.title}</h2>
       </div>
       <div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(310px,1fr))] justify-center">
         {offer.points.map((offer, index) => (
@@ -38,9 +38,7 @@ const Offer = () => {
           ></Card>
         ))}
       </div>
-      <p
-        className={`${responsive.sectionContent} text-center p-6 rounded-sm mt-16 `}
-      >
+      <p className={`${responsiveText.sectionContent} text-center p-6 mt-8 `}>
         {offer.description}
       </p>
     </section>

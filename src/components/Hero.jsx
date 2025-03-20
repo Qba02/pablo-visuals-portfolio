@@ -1,7 +1,7 @@
 import React from "react";
 import { heroBg2 } from "../assets";
 import { hero } from "../constants/content";
-import { responsive } from "../responsive";
+import { responsiveText } from "../styles/responsiveText";
 import { SiYoutube } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
 import { externalLinks } from "../constants/links";
@@ -18,8 +18,10 @@ const Hero = () => {
       style={{ backgroundImage: `url(${heroBg2})` }}
     >
       <div className="absolute top-[55%] left-[12%] -translate-y-1/2">
-        <h1 className={`${responsive.heroHeading}`}>{hero.title}</h1>
-        <p className={`${responsive.heroContent} mt-5 w-1/2`}>{hero.content}</p>
+        <h1 className={`${responsiveText.heroHeading}`}>{hero.title}</h1>
+        <p className={`${responsiveText.heroContent} mt-5 w-1/2`}>
+          {hero.content}
+        </p>
         <div className="flex  space-x-6 mt-5">
           <Link
             to="contact"
