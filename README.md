@@ -11,7 +11,6 @@ It's also fully responsive.
 
 **You can see portfolio here (coming soon)**
 
-Example view:
 ![app view example](./src/assets/example-screen.png)
 
 ## Tech Stack 🛠️
