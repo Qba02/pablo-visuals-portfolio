@@ -1,36 +1,72 @@
-# React + Vite
+# Pablo Visuals portfolio <img src="./src/assets/logo.svg" alt="Logo" width="20">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview 📖
 
-Currently, two official plugins are available:
+This project was created to build an online portfolio.
+It is a simple frontend application based on the `React` library.
+It also utilizes `Framer Motion`, `Tailwind CSS`, and `Three.js` to enhance visual effects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In addition to showcasing the portfolio, the application allows users to send emails (email.js).
+It's also fully responsive.
 
-## Expanding the ESLint configuration
+**You can see portfolio here (coming soon)**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Example view:
+![app view example](./src/assets/example-screen.png)
 
-## Credits:
+## Tech Stack 🛠️
 
-[react-icons]
-**Apache 2.0 license**
+![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
 
-- RiAdvertisementLine
-- MdOutlineMusicVideo
-- MdMail
-- RiArrowUpSLine
+![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff)
 
-**MIT license**:
+## Quick Start⚡
 
-- PiFilmReel
-- PiFilmStrip
-- PiVideoConference
-- IoIosArrowDropleft
-- IoIosArrowDropright
-- IoIosPeople
+### Prerequisites
 
-CC0 1.0 Universal
+Make sure you have `Node.js` (I've used v20.18.3) and `npm` (or yarn/pnpm) installed.
 
-- SiYoutube
-- SiInstagram
+### Installation & Running the Project
+
+1️⃣ Clone the repository
+
+```
+git clone https://github.com/Qba02/pablo-visuals-portfolio.git
+cd pablo-visuals-portfolio
+```
+
+2️⃣ Install dependencies
+
+```
+npm install
+```
+
+3️⃣ Start the development server
+
+```
+npm run dev
+```
+
+App will be running at http://localhost:5173/
+
+#### Build for Production📦
+
+```
+npm run build
+```
+
+The production-ready files will be in the `dist/` folder.
+
+## Credits 📄
+
+The icons used in this project come from (react-icons)[https://react-icons.github.io/react-icons/] project based on the MIT license. More precisely: `Material Design icons`, `Remix Icon`, `Phosphor Icons`, `Ionicons 4`, `Simple Icons`.
+Icons are licensed under (please check each project licences accordingly):
+
+- [MIT license](https://opensource.org/license/MIT)
+- [Apache License Version 2.0](https://www.apache.org/licenses/)
+- [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Badges in this README.md are from [md-badges](https://github.com/inttter/md-badges) (MIT license).
