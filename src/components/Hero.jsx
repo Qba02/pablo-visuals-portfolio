@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="absolute top-[55%] left-[15%] -translate-y-1/2">
         <h1 className={`${responsiveText.heroHeading}`}>{hero.title}</h1>
         <p
-          className={`${responsiveText.heroContent} text-justify italic mt-1 sm:mt-2 lg:mt-5 w-1/3`}
+          className={`${responsiveText.heroContent} text-justify mt-1 sm:mt-2 lg:mt-5 w-1/3`}
         >
           {hero.content}
         </p>

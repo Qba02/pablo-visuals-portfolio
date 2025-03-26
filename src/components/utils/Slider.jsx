@@ -16,7 +16,7 @@ export const SliderCard = ({ title, bgImg, url }) => (
       {title}
     </h3>
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <SiYoutube className="social-icon lg:w-28 lg:h-28 opacity-80
+      <SiYoutube className="social-icon sm:w-20 sm:h-20 lg:w-28 lg:h-28 opacity-80
       absolute bottom-[50%] right-[50%] translate-x-1/2 translate-y-1/2"></SiYoutube>
     </a>
   </div>

@@ -108,4 +108,33 @@
   .projects-title-shadow {
     text-shadow: 2px 2px 2px rgb(0, 0, 0), -2px -2px 10px rgb(0, 0, 0);
   }
+
+  .camera-loader {
+    @apply bg-light w-24 h-16 outline outline-4 outline-dark rounded-lg relative animate-bounce;
+  }
+
+  .camera-loader::after {
+    content: "";
+    @apply absolute left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-10 h-5 bg-light rounded-[5px];
+  }
+
+  .camera-loader:before {
+    content: "";
+    @apply block absolute left-1/2 -translate-x-1/2 translate-y-1/4 w-11 h-11 border-[6px] border-dark rounded-[50%];
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1.3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
 }

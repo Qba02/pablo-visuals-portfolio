@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import { Slider, SliderCard } from "./utils/Slider";
 import EnvelopeCanvas from "./utils/EnvelopeCanvas";
 import ContactForm from "./utils/ContactForm";
+import Loader from "./utils/Loader";
 
 export {
   Navbar,
@@ -21,4 +22,5 @@ export {
   Footer,
   EnvelopeCanvas,
   ContactForm,
+  Loader,
 };

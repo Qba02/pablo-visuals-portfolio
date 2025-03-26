@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   Navbar,
@@ -8,25 +8,38 @@ import {
   Projects,
   Contact,
   Footer,
+  Loader,
 } from "./components/index.js";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
+
   return (
     <BrowserRouter>
-      <main className="relative z-0 bg-dark">
-        <div>
-          <Navbar />
-          <Hero></Hero>
-        </div>
+      {loading ? (
+        <Loader></Loader>
+      ) : (
+        <main className="relative z-0 bg-dark">
+          <div>
+            <Navbar />
+            <Hero></Hero>
+          </div>
 
-        <div>
-          <About />
-          <Offer />
-          <Projects />
-          <Contact />
-        </div>
-        <Footer></Footer>
-      </main>
+          <div>
+            <About />
+            <Offer />
+            <Projects />
+            <Contact />
+          </div>
+          <Footer></Footer>
+        </main>
+      )}
     </BrowserRouter>
   );
 };
