@@ -6,6 +6,8 @@ import { SiYoutube } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
 import { externalLinks } from "../constants/links";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { textFadeUp } from "../styles/animations";
 
 const Hero = () => {
   const ytLink = externalLinks.find((link) => link.id === "yt");
@@ -17,20 +19,26 @@ const Hero = () => {
       className="relative w-full h-screen mx-auto bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBg2})` }}
     >
-      <div
+      <motion.div
+        initial="hidden"
+        animate="show"
         className="absolute bottom-[10%] left-[5%] sm:left-[7%] md:left-[10%] lg:left-[15%] 
         sm:bottom-[35%] lg:bottom-[40%] sm:translate-y-1/2"
       >
-        <h1 className={`${responsiveText.heroHeading}`}>
+        <motion.h1
+          variants={textFadeUp}
+          className={`${responsiveText.heroHeading}`}
+        >
           {hero.title}
-        </h1>
-        <p
+        </motion.h1>
+        <motion.p
+          variants={textFadeUp}
           className={`${responsiveText.heroContent} text-justify mt-1 sm:mt-2 lg:mt-5 w-1/2 xs:w-1/3`}
         >
           {hero.content}
-        </p>
+        </motion.p>
 
-        <div className="flex space-x-6 mt-5">
+        <motion.div variants={textFadeUp} className="flex space-x-6 mt-5">
           <Link
             to="contact"
             smooth={true}
@@ -52,8 +60,8 @@ const Hero = () => {
           >
             &nbsp;Oferta&nbsp;
           </Link>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="absolute bottom-3 right-3 sm:bottom-[5%] sm:right-[2%] flex flex-col space-y-5 items-center">
         <div
           className="rounded-sm hidden sm:block w-[3px] h-48 xl:h-80 bg-gradient-to-b from-dark via-gray-500

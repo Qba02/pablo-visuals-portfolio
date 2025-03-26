@@ -2,13 +2,20 @@ import React from "react";
 import { offer } from "../constants/content";
 import { responsiveText } from "../styles/responsiveText";
 import { BsExclamationCircle } from "react-icons/bs";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { cardFadeUp, gridContainerMotions } from "../styles/animations";
 
 export const Card = ({ title, icon, subtitle, index }) => (
-  <div
-    className={`offer-card relative min-h-36 sm:min-h-48 lg:min-h-56 text-center 
-    rounded-2xl backdrop-blur-sm overflow-hidden border-tertiary border-[1px]
-    hover:scale-110 transition-all duration-300 ease-in
-    ${index % 2 === 0 ? "hover:rotate-3" : "hover:-rotate-3"}`}
+  <motion.div
+    variants={cardFadeUp}
+    whileHover={{
+      scale: 1.1,
+      rotate: index % 2 === 0 ? 3 : -3,
+      transition: { duration: 0.5, ease: "easeOut" },
+    }}
+    className="offer-card relative min-h-36 sm:min-h-48 lg:min-h-56 text-center 
+    rounded-2xl backdrop-blur-sm overflow-hidden border-tertiary border-[1px]"
   >
     <div className="flex w-full h-[70%] justify-center items-center px-4">
       {icon}
@@ -17,17 +24,25 @@ export const Card = ({ title, icon, subtitle, index }) => (
       <h3 className="text-base lg:text-lg">{title}</h3>
       <p className="text-sm lg:text-base font-light text-light">{subtitle}</p>
     </div>
-  </div>
+  </motion.div>
 );
 
 const Offer = () => {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-200px" });
+
   return (
-    <section id="offer" className="section">
+    <section ref={sectionRef} id="offer" className="section">
       <h2 className={`${responsiveText.sectionHeading} section-title`}>
         {offer.title}
         <span>{offer.tagline}</span>
       </h2>
-      <div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(310px,1fr))] justify-center">
+      <motion.div
+        variants={gridContainerMotions}
+        initial="hidden"
+        animate={isInView ? "show" : "hidden"}
+        className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(310px,1fr))] justify-center"
+      >
         {offer.points.map((offer, index) => (
           <Card
             key={index}
@@ -39,7 +54,7 @@ const Offer = () => {
             subtitle={offer.subtitle}
           ></Card>
         ))}
-      </div>
+      </motion.div>
       <p
         className={`${responsiveText.sectionContent} relative text-center p-6 mt-8 border-[1px] border-tertiary rounded-lg`}
       >

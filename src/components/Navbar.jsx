@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { navLinks } from "../constants/links";
 import { logo } from "../assets";
+import { motion } from "framer-motion";
+import { cardFadeUp, gridContainerMotions } from "../styles/animations";
 
 const Navbar = () => {
   const [onTop, setOnTop] = useState(true);
@@ -18,7 +20,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 z-50 flex items-center justify-center w-full py-3 px-10 transition-all duration-500 ease-in ${
-        onTop ? "bg-transparent py-8" : "bg-darkGrey/80 nav-shadow backdrop-blur-md"
+        onTop
+          ? "bg-transparent py-8"
+          : "bg-darkGrey/80 nav-shadow backdrop-blur-md"
       }`}
     >
       <div className="w-full flex justify-between">
@@ -30,9 +34,14 @@ const Navbar = () => {
             hover:-rotate-6 transition-transform duration-500"
           />
         </Link>
-        <ul className="hidden list-none sm:flex items-center gap-12">
+        <motion.ul
+          variants={gridContainerMotions}
+          initial="hidden"
+          animate="show"
+          className="hidden list-none sm:flex items-center gap-12"
+        >
           {navLinks.map((link) => (
-            <li key={link.id}>
+            <motion.li key={link.id} variants={cardFadeUp}>
               <Link
                 to={link.id}
                 smooth={true}
@@ -44,9 +53,9 @@ const Navbar = () => {
               >
                 {link.title}
               </Link>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </nav>
   );

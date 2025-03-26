@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import { aboutMe } from "../constants/content";
 import { responsiveText } from "../styles/responsiveText";
 import { profilePic } from "../assets/index";
+import { motion, useInView } from "framer-motion";
+import { cardFadeLeft, cardFadeRight } from "../styles/animations";
 
 const About = () => {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
   return (
-    <section id="about" className="section">
+    <section ref={sectionRef} id="about" className="section">
       <h2 className={`${responsiveText.sectionHeading} section-title`}>
         {aboutMe.title} <span>{aboutMe.tagline}</span>
       </h2>
-      <div className="flex flex-col lg:flex-row items-center justify-between">
-        <div className="w-full mb-10 lg:w-[50%] lg:mb-0">
+      <motion.div
+        initial="hidden"
+        animate={isInView ? "show" : "hidden"}
+        className="flex flex-col lg:flex-row items-center justify-between"
+      >
+        <motion.div
+          variants={cardFadeLeft}
+          className="w-full mb-10 lg:w-[50%] lg:mb-0"
+        >
           <p className="text-base lg:text-xl tracking-[4px] text-center uppercase">
             {aboutMe.subtitle}
           </p>
@@ -30,15 +42,18 @@ const About = () => {
               {aboutMe.quoteAuthor}
             </span>
           </p>
-        </div>
-        <div className="rounded-xl w-full lg:w-[40%] box-shadow ">
+        </motion.div>
+        <motion.div
+          variants={cardFadeRight}
+          className="rounded-xl w-full lg:w-[40%] box-shadow "
+        >
           <img
             src={profilePic}
             alt="My profile picture"
             className="object-contain rounded-xl"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
