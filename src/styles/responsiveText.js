@@ -3,7 +3,7 @@ export const responsiveText = {
   paddingY: "py-4 sm:py-8 md:py-16 lg:py-24 xl:py-32",
 
   heroHeading: "font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl",
-  heroContent: "text-light text-base sm:text-lg lg:text-xl xl:text-2xl",
+  heroContent: "text-light text-sm sm:text-lg lg:text-xl xl:text-2xl",
 
   sectionHeading:
     "text-3xl sm:text-4xl lg:text-5xl xl:text-5xl mb-5 sm:mb-8 lg:mb-16",

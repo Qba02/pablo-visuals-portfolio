@@ -9,9 +9,9 @@ const About = () => {
       <h2 className={`${responsiveText.sectionHeading} section-title`}>
         {aboutMe.title} <span>{aboutMe.tagline}</span>
       </h2>
-      <div className="flex items-center justify-between">
-        <div className="w-[50%]">
-          <p className="text-xl tracking-[4px] text-center uppercase">
+      <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className="w-full mb-10 lg:w-[50%] lg:mb-0">
+          <p className="text-base lg:text-xl tracking-[4px] text-center uppercase">
             {aboutMe.subtitle}
           </p>
           <p className={`${responsiveText.sectionContent} text-justify`}>
@@ -21,15 +21,17 @@ const About = () => {
             {aboutMe.subcontent}
           </p>
           <p
-            className={`${responsiveText.sectionContent}  text-center italic mt-1 sm:mt-2 lg:mt-5`}
+            className={`${responsiveText.sectionContent} text-center italic mt-1 sm:mt-2 lg:mt-5`}
           >
             {aboutMe.quote}
-            <span className={`${responsiveText.sectionContent} not-italic  block`}>
+            <span
+              className={`${responsiveText.sectionContent} not-italic block`}
+            >
               {aboutMe.quoteAuthor}
             </span>
           </p>
         </div>
-        <div className="rounded-xl w-[40%] box-shadow ">
+        <div className="rounded-xl w-full lg:w-[40%] box-shadow ">
           <img
             src={profilePic}
             alt="My profile picture"

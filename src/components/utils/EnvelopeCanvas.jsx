@@ -30,7 +30,7 @@ const EnvelopeCanvas = () => {
       <Model />
       <OrbitControls
         autoRotate={true}
-        autoRotateSpeed={1.6}
+        autoRotateSpeed={3}
         enableZoom={false}
         maxPolarAngle={Math.PI / 1.8}
         minPolarAngle={Math.PI / 1.8}

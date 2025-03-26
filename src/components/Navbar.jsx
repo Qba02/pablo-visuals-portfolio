@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex items-center justify-center w-full py-3  px-10 transition-all duration-500 ease-in ${
+      className={`fixed top-0 z-50 flex items-center justify-center w-full py-3 px-10 transition-all duration-500 ease-in ${
         onTop ? "bg-transparent py-8" : "bg-darkGrey/80 nav-shadow backdrop-blur-md"
       }`}
     >
@@ -30,7 +30,7 @@ const Navbar = () => {
             hover:-rotate-6 transition-transform duration-500"
           />
         </Link>
-        <ul className="list-none flex items-center gap-12">
+        <ul className="hidden list-none sm:flex items-center gap-12">
           {navLinks.map((link) => (
             <li key={link.id}>
               <Link

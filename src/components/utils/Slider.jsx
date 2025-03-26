@@ -12,12 +12,14 @@ export const SliderCard = ({ title, bgImg, url }) => (
      transition-all duration-300 ease-out"
     style={{ backgroundImage: `url(${bgImg})` }}
   >
-    <h3 className="text-left text-xl lg:text-3xl font-medium projects-title-shadow">
+    <h3 className="text-center sm:text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium projects-title-shadow">
       {title}
     </h3>
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <SiYoutube className="social-icon sm:w-20 sm:h-20 lg:w-28 lg:h-28 opacity-80
-      absolute bottom-[50%] right-[50%] translate-x-1/2 translate-y-1/2"></SiYoutube>
+      <SiYoutube
+        className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 opacity-80 hover:scale-110 transition-transform duration-300
+        hover:opacity-100 absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"
+      ></SiYoutube>
     </a>
   </div>
 );
@@ -42,7 +44,8 @@ export const Slider = ({ children }) => {
       {React.Children.map(children, (child, i) => (
         <motion.div
           key={i}
-          className="absolute w-full h-full hover:scale-95 transition-all duration-500 ease-out blur-filter transform-card"
+          className="absolute w-full h-full hover:scale-95 transition-all 
+          duration-500 ease-out blur-filter transform-card"
           style={{
             "--active": i === active ? 1 : 0,
             "--offset": (active - i) / 3,

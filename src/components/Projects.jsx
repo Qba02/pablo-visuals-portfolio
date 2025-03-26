@@ -5,7 +5,7 @@ import { responsiveText } from "../styles/responsiveText";
 
 const Projects = () => {
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section overflow-hidden">
       <h2 className={`${responsiveText.sectionHeading} section-title`}>
         {projects.title} <span>{projects.tagline}</span>
       </h2>
