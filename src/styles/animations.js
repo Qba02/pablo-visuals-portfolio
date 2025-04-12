@@ -3,7 +3,7 @@ const textFadeUp = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, ease: "easeOut", delay: 0.4 },
+    transition: { duration: 1, ease: "easeOut", delay: 0.1 },
   },
 };
 
@@ -11,7 +11,7 @@ const gridContainerMotions = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.25, delayChildren: 0.2 },
+    transition: { staggerChildren: 0.25, delayChildren: 0.1 },
   },
 };
 
@@ -38,7 +38,7 @@ const cardFadeLeft = {
   show: {
     opacity: 1,
     x: 0,
-    transition: { type: "spring", stiffness: 30, damping: 10, delay:0.3 },
+    transition: { type: "spring", stiffness: 30, damping: 10, delay:0.2 },
   },
 };
 
@@ -47,7 +47,7 @@ const cardFadeRight = {
   show: {
     opacity: 1,
     x: 0,
-    transition: { type: "spring", stiffness: 30, damping: 10, delay:0.3 },
+    transition: { type: "spring", stiffness: 30, damping: 10, delay:0.2 },
   },
 };
 

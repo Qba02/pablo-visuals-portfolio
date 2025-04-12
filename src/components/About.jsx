@@ -7,7 +7,7 @@ import { cardFadeLeft, cardFadeRight } from "../styles/animations";
 
 const About = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  const isInView = useInView(sectionRef, { once: false, margin: "-100px" });
 
   return (
     <section ref={sectionRef} id="about" className="section">
@@ -29,7 +29,7 @@ const About = () => {
           <p className={`${responsiveText.sectionContent} text-justify`}>
             {aboutMe.content}
           </p>
-          <p className={`text-gray-500 text-justify mt-2`}>
+          <p className={`text-gray-500 text-justify mt-2 text-xs sm:text-sm lg:text-base xl:text-lg`}>
             {aboutMe.subcontent}
           </p>
           <p

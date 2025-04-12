@@ -7,7 +7,7 @@ import { cardFadeUp } from "../styles/animations";
 
 const Projects = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: "true", margin: "-200px" });
+  const isInView = useInView(sectionRef, { once: false, margin: "-200px" });
 
   return (
     <section ref={sectionRef} id="projects" className="section overflow-hidden">

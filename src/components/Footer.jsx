@@ -51,7 +51,7 @@ const Footer = () => {
           <span className="absolute top-[-50%] -translate-y-1/2 text-light text-sm">
             {copied ? <>Skopiowano&nbsp;email</> : ""}
           </span>
-          <MdMail onClick={copyToClipboard} className="w-6 h-6"></MdMail>
+          <MdMail onClick={copyToClipboard} className="w-6 h-6 cursor-pointer"></MdMail>
         </div>
       </div>
       <div>
@@ -61,7 +61,7 @@ const Footer = () => {
         <Link to="hero">
           <RiArrowUpSLine
             className="w-10 h-10 sm:w-14 sm:h-14 text-light hover:-translate-y-1 
-          transition-all duration-300"
+          transition-all duration-300 cursor-pointer"
           ></RiArrowUpSLine>
         </Link>
       </div>

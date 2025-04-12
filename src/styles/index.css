@@ -30,7 +30,7 @@
   }
 
   .section {
-    @apply relative w-full py-6 mx-auto px-[8%] mt-16;
+    @apply relative w-full py-6 mx-auto px-[8%] mt-16 overflow-x-hidden;
   }
 
   .section-title {
