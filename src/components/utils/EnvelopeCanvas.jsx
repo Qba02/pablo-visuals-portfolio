@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 const Model = () => {
-  const { scene } = useGLTF("./models/koperta3.glb");
+  const { scene } = useGLTF("./models/koperta.glb");
   return <primitive object={scene} position={[0, -0.25, 0]} scale={1} rotation-x={1.57} />;
 };
 
@@ -23,14 +23,14 @@ const EnvelopeCanvas = () => {
     <Canvas
       shadows={false}
       frameloop="demand"
-      camera={{ position: [2, 3.1, 2], fov: 60 }}
+      camera={{ position: [2, 3.4, 2], fov: 60 }}
       dpr={isLowPerformance ? 1 : [1, 2]}
     >
       <FixedLight />
       <Model />
       <OrbitControls
         autoRotate={true}
-        autoRotateSpeed={3}
+        autoRotateSpeed={2}
         enableZoom={false}
         maxPolarAngle={Math.PI / 1.8}
         minPolarAngle={Math.PI / 1.8}
