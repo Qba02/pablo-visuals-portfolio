@@ -9,6 +9,7 @@ import { Slider, SliderCard } from "./utils/Slider";
 import EnvelopeCanvas from "./utils/EnvelopeCanvas";
 import ContactForm from "./utils/ContactForm";
 import Loader from "./utils/Loader";
+import FlipCard from "./utils/FlipCard";
 
 export {
   Navbar,
@@ -23,4 +24,5 @@ export {
   EnvelopeCanvas,
   ContactForm,
   Loader,
+  FlipCard
 };
