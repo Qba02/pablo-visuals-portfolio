@@ -85,10 +85,6 @@
     box-shadow: 0px 10px 10px 0px #000000;
   }
 
-  .offer-card {
-    box-shadow: 0px 10px 20px #000000;
-    background: linear-gradient(rgba(255, 255, 255, 0.03), transparent);
-  }
   .contact-input {
     @apply w-full bg-transparent placeholder:text-light placeholder:text-sm outline-none 
     border-b-[1px]  py-4 pr-4;
@@ -121,6 +117,24 @@
   .camera-loader:before {
     content: "";
     @apply block absolute left-1/2 -translate-x-1/2 translate-y-1/4 w-11 h-11 border-[6px] border-dark rounded-[50%];
+  }
+
+  .flipcard-inner {    
+    box-shadow: 0px 10px 20px #000000;
+    background: linear-gradient(rgba(255, 255, 255, 0.03), transparent);
+    transform-style: preserve-3d;
+  }
+
+  .flipcard-front,
+  .flipcard-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .flipcard-back {
+    transform: rotateY(180deg);
   }
 
   @keyframes blink {

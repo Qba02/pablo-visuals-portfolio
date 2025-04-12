@@ -17,6 +17,7 @@ const Offer = () => {
         {offer.title}
         <span>{offer.tagline}</span>
       </h2>
+      <p className="mb-4 text-center text-light lg:text-xl" >Kliknij na karte by dowiedzie się więcej!</p>
       <motion.div
         variants={gridContainerMotions}
         initial="hidden"
