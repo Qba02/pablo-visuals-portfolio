@@ -25,7 +25,7 @@ const App = () => {
       {loading ? (
         <Loader></Loader>
       ) : (
-        <main className="relative z-0 bg-dark">
+        <main className="relative z-0 bg-light dark:bg-dark">
           <div>
             <Navbar />
             <Hero></Hero>

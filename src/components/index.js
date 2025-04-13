@@ -10,6 +10,7 @@ import EnvelopeCanvas from "./utils/EnvelopeCanvas";
 import ContactForm from "./utils/ContactForm";
 import Loader from "./utils/Loader";
 import FlipCard from "./utils/FlipCard";
+import ThemeSwitch from "./utils/ThemeSwitch";
 
 export {
   Navbar,
@@ -24,5 +25,6 @@ export {
   EnvelopeCanvas,
   ContactForm,
   Loader,
-  FlipCard
+  FlipCard,
+  ThemeSwitch,
 };

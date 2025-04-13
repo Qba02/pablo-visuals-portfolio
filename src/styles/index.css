@@ -8,12 +8,16 @@
   box-sizing: border-box;
   font-family: "Poppins", Arial, sans-serif;
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+.dark {
   color-scheme: dark;
 }
 
 @layer utilities {
   .nav {
-    @apply relative cursor-pointer text-xl hover:text-secondary transition-all duration-500;
+    @apply relative cursor-pointer dark:text-white text-darkGrey text-xl dark:hover:text-secondary hover:text-secondary transition-all duration-500;
   }
 
   .nav::after {
@@ -39,7 +43,7 @@
 
   .section-title::before {
     content: "";
-    @apply absolute left-1/2 bottom-0 transform -translate-x-1/2 h-[1px] w-[120px] bg-secondary;
+    @apply absolute left-1/2 bottom-0 transform -translate-x-1/2 h-[2px] dark:h-[1px] w-[150px] bg-secondary;
   }
 
   .section-title span {
@@ -77,8 +81,12 @@
     transform: translateX(100%) translateY(-50%);
   }
 
-  .box-shadow {
+  .box-shadow-dark {
     box-shadow: 20px 20px 30px #000000, -10px -10px 30px #000000;
+  }
+
+  .box-shadow-light {
+    box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #979797;
   }
 
   .nav-shadow {
@@ -86,19 +94,19 @@
   }
 
   .contact-input {
-    @apply w-full bg-transparent placeholder:text-light placeholder:text-sm outline-none 
-    border-b-[1px]  py-4 pr-4;
+    @apply w-full bg-transparent placeholder:text-dark dark:placeholder:text-light placeholder:text-sm outline-none 
+    border-b-[1px] dark:border-white border-dark py-4 pr-4;
   }
 
   .contact-label {
-    @apply absolute -top-1 block text-light text-xs transition-all duration-150
-    peer-focus:text-sm peer-focus:text-white
+    @apply absolute -top-1 block text-dark dark:text-light text-xs transition-all duration-150
+    peer-focus:text-sm dark:peer-focus:text-white peer-focus:text-black
     peer-placeholder-shown:hidden;
   }
 
   .icon-circle-box {
     @apply flex items-center justify-center rounded-[50%] w-12 h-12 border-tertiary border-[1px] p-1
-    hover:border-white hover:scale-95 transition-all duration-300;
+    dark:hover:border-white hover:border-black hover:scale-95 transition-all duration-300;
   }
 
   .projects-title-shadow {
@@ -119,10 +127,14 @@
     @apply block absolute left-1/2 -translate-x-1/2 translate-y-1/4 w-11 h-11 border-[6px] border-dark rounded-[50%];
   }
 
-  .flipcard-inner {    
+  .flipcard-shadow-dark {
     box-shadow: 0px 10px 20px #000000;
     background: linear-gradient(rgba(255, 255, 255, 0.03), transparent);
-    transform-style: preserve-3d;
+  }
+
+  .flipcard-shadow-light {
+    box-shadow: 8px 8px 20px #bebebe,-8px -8px 40px #efeeec;
+    background: #dcdcdc;
   }
 
   .flipcard-front,

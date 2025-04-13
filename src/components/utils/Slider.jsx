@@ -12,12 +12,12 @@ export const SliderCard = ({ title, bgImg, url }) => (
      transition-all duration-300 ease-out"
     style={{ backgroundImage: `url(${bgImg})` }}
   >
-    <h3 className="text-center sm:text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium projects-title-shadow">
+    <h3 className="text-center text-white sm:text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium projects-title-shadow">
       {title}
     </h3>
     <a href={url} target="_blank" rel="noopener noreferrer">
       <SiYoutube
-        className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 opacity-80 hover:scale-110 transition-transform duration-300
+        className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 text-white opacity-80 hover:scale-110 transition-transform duration-300
         hover:opacity-100 absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"
       ></SiYoutube>
     </a>
@@ -39,7 +39,7 @@ export const Slider = ({ children }) => {
   return (
     <div className="w-full h-full preserve-3d perspective-800">
       <button className="slider-button left" onClick={handlePrev}>
-        <IoIosArrowDropleft></IoIosArrowDropleft>
+        <IoIosArrowDropleft className="text-white"></IoIosArrowDropleft>
       </button>
       {React.Children.map(children, (child, i) => (
         <motion.div
@@ -61,7 +61,7 @@ export const Slider = ({ children }) => {
       ))}
 
       <button className="slider-button right" onClick={handleNext}>
-        <IoIosArrowDropright></IoIosArrowDropright>
+        <IoIosArrowDropright className="text-white"></IoIosArrowDropright>
       </button>
     </div>
   );

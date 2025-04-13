@@ -16,23 +16,24 @@ export const FlipCard = ({ title, icon, subtitle, index }) => {
       }}
     >
       <motion.div
-        className="flipcard-inner cursor-pointer w-ful h-full 
-                   text-center rounded-2xl border-tertiary border-[1px]"
+        className="preserve-3d cursor-pointer w-ful h-full 
+                   text-center rounded-2xl border-[2px] dark:border-tertiary dark:border-[1px]
+                   flipcard-shadow-light dark:flipcard-shadow-dark"
         onClick={() => setIsFlipped(!isFlipped)}
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
         transition={{ duration: 0.6, animationDirection: "normal" }}
       >
         <div className="flipcard-front">
-          <div className="flex w-full h-[70%] justify-center items-center px-4">
+          <div className="flex w-full h-[70%] justify-center items-center px-4 dark:text-light text-darkGrey">
             {icon}
           </div>
           <div
-            className="flex flex-col w-full h-[30%] justify-center items-center 
+            className="flex flex-col w-full rounded-b-2xl  h-[30%] justify-center items-center 
                         px-2 bg-white/10"
           >
             <h3 className="text-base lg:text-lg">{title}</h3>
-            <p className="text-sm lg:text-base font-light text-light">
+            <p className="text-sm lg:text-base font-light dark:text-light">
               {subtitle}
             </p>
           </div>

@@ -17,7 +17,7 @@ const Offer = () => {
         {offer.title}
         <span>{offer.tagline}</span>
       </h2>
-      <p className="mb-4 text-center text-light lg:text-xl" >Kliknij na karte by dowiedzie się więcej!</p>
+      <p className="mb-4 text-center text-dark dark:text-light lg:text-xl" >Kliknij na karte by dowiedzie się więcej!</p>
       <motion.div
         variants={gridContainerMotions}
         initial="hidden"
@@ -39,7 +39,7 @@ const Offer = () => {
       <p
         className={`${responsiveText.sectionContent} relative text-center p-6 mt-8 border-[1px] border-tertiary rounded-lg`}
       >
-        <BsExclamationCircle className="inline absolute -top-2 -left-2 w-7 h-7 bg-dark"></BsExclamationCircle>
+        <BsExclamationCircle className="inline absolute -top-2 -left-2 w-7 h-7 text-tertiary dark:text-tertiary bg-light dark:bg-dark"></BsExclamationCircle>
         {offer.description}
       </p>
     </section>

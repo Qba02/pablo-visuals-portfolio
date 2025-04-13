@@ -45,7 +45,7 @@ const About = () => {
         </motion.div>
         <motion.div
           variants={cardFadeRight}
-          className="rounded-xl w-full lg:w-[40%] box-shadow "
+          className="rounded-xl w-full lg:w-[40%] box-shadow-light dark:box-shadow-dark"
         >
           <img
             src={profilePic}

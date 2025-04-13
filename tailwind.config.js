@@ -1,6 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./index.html"],
   mode: "jit",
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -9,7 +10,7 @@ module.exports = {
         tertiary: "#444444",
         dark: "#141414",
         darkGrey: "#1e1e1e", // #282828
-        light: "#d6d6d6", // #ededed
+        light: "#dedcd7", // #ededed, #dedcd7, #d6d6d6
       },
       screens: {
         xs: "30rem",

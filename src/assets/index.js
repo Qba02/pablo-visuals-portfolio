@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import heroBg from "./hero-bg.png";
+import logoDark from "./logo-dark.svg";
 import profilePic from "./profile-pic.png";
 import projectPlot from "./projects/fictional.png";
 import projectMusic from "./projects/music-video.jpg";
@@ -8,7 +8,7 @@ import projectAd from "./projects/ad.png";
 
 export {
   logo,
-  heroBg,
+  logoDark,
   profilePic,
   projectPlot,
   projectMusic,

@@ -45,7 +45,7 @@ function ContactForm() {
 
       <button
         type="submit"
-        className="w-full h-14 bg-light mt-6 text-dark font-medium text-lg"
+        className="w-full h-14 bg-dark dark:bg-light text-light dark:text-dark mt-6  font-medium text-lg"
       >
         Wyślij
       </button>

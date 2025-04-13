@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="absolute bottom-0 right-3 sm:bottom-5 sm:right-8">
         <Link to="hero">
           <RiArrowUpSLine
-            className="w-10 h-10 sm:w-14 sm:h-14 text-light hover:-translate-y-1 
+            className="w-10 h-10 sm:w-14 sm:h-14 text-tertiary dark:text-light hover:-translate-y-1 
           transition-all duration-300 cursor-pointer"
           ></RiArrowUpSLine>
         </Link>
